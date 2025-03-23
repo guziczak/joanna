@@ -62,16 +62,16 @@
     <main>
         <div id="birds-container">
             <div class="bird" onclick="showInfo('dzieciol')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Dryocopus_martius_1_%28Marek_Szczepanek%29.jpg" alt="Dzięcioł czarny">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Dryocopus_martius.jpg/320px-Dryocopus_martius.jpg" alt="Dzięcioł czarny">
             </div>
             <div class="bird" onclick="showInfo('siniak')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Columba_oenas_-_La_Couyere.jpg/320px-Columba_oenas_-_La_Couyere.jpg" alt="Siniak">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Columba_oenas_2.jpg/320px-Columba_oenas_2.jpg" alt="Siniak">
             </div>
             <div class="bird" onclick="showInfo('wlochatka')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Aegolius-funereus-001.jpg" alt="Włochatka">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tengmalm%27s_Owl_%28Aegolius_funereus%29.jpg/320px-Tengmalm%27s_Owl_%28Aegolius_funereus%29.jpg" alt="Włochatka">
             </div>
             <div class="bird" onclick="showInfo('orzechowka')">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Nucifraga_caryocatactes_1_%28Marek_Szczepanek%29.jpg" alt="Orzechówka">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Nucifraga_caryocatactes.jpg/320px-Nucifraga_caryocatactes.jpg" alt="Orzechówka">
             </div>
         </div>
 
@@ -82,7 +82,7 @@
 
         <div id="quiz">
             <h2>Quiz: Jak nazywa się ten ptak?</h2>
-            <img id="quiz-image" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Dryocopus_martius_1_%28Marek_Szczepanek%29.jpg" alt="Ptak do zgadnięcia">
+            <img id="quiz-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Dryocopus_martius.jpg/320px-Dryocopus_martius.jpg" alt="Ptak do zgadnięcia">
             <input type="text" id="answer" placeholder="Wpisz nazwę ptaka">
             <button onclick="checkAnswer()">Sprawdź</button>
             <p id="quiz-result"></p>
@@ -105,10 +105,10 @@
         const birdNames = Object.keys(birdsInfo);
         let currentBird = birdNames[Math.floor(Math.random() * birdNames.length)];
         const birdImages = {
-            dzieciol: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Dryocopus_martius_1_%28Marek_Szczepanek%29.jpg",
-            siniak: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Columba_oenas_-_La_Couyere.jpg/320px-Columba_oenas_-_La_Couyere.jpg",
-            wlochatka: "https://upload.wikimedia.org/wikipedia/commons/1/15/Aegolius-funereus-001.jpg",
-            orzechowka: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Nucifraga_caryocatactes_1_%28Marek_Szczepanek%29.jpg"
+            dzieciol: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Dryocopus_martius.jpg/320px-Dryocopus_martius.jpg",
+            siniak: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Columba_oenas_2.jpg/320px-Columba_oenas_2.jpg",
+            wlochatka: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tengmalm%27s_Owl_%28Aegolius_funereus%29.jpg/320px-Tengmalm%27s_Owl_%28Aegolius_funereus%29.jpg",
+            orzechowka: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Nucifraga_caryocatactes.jpg/320px-Nucifraga_caryocatactes.jpg"
         };
 
         document.getElementById("quiz-image").src = birdImages[currentBird];
